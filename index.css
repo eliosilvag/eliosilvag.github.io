@@ -1,0 +1,266 @@
+/* CONFIGURAÇÕES GERAIS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+}
+
+.interface {
+    max-width: 1280px;
+}
+
+/* INICIO */
+.cabecalho-home {
+    margin: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.home-lista {
+    display: flex;
+    justify-content: space-around;
+    gap: 70px;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+.link-cabecalho {
+    text-decoration: none;
+    color: #1a1a1a;
+    display: inline-block;
+    transition: .2s;
+}
+
+.link-cabecalho:hover{
+    color: #d16058;
+    transform: scale(1.05);
+}
+
+.logo {
+    font-family: "Hind Siliguri", sans-serif;
+    font-size: 26px;
+    color: #1a1a1a;
+}
+
+.botao {
+    background-color: #1a1a1a;
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    border: none;
+    width: 140px;
+    height: 40px;
+    border-radius: 20px;
+    display: inline-block;
+    transition: .2s;
+}
+
+.botao:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+/* MAIN */
+
+#slogan {
+    text-align: center;
+    margin-top: 340px;
+    font-family: "Montserrat", sans-serif;
+    transition: 0.2s;
+}
+
+#slogan h1 {
+    display: inline-block;
+    position: relative;
+    animation: animacao 1s ease-in-out;
+}
+
+main div h1 span {
+    color: #d16058;
+}
+
+/* MAIN 2 */
+
+main .sobre {
+    background-color: #1a1a1a;
+    margin-top: 450px;
+    position: relative;
+    animation: animacao 1.5s ease-in-out;
+    padding: 50px;
+}
+
+main .sobre .sobre-box {
+}
+
+main .sobre .flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 190px;
+}
+
+
+main div .sobre-text {
+    display: inline-block;
+    margin-right: 100px;
+}
+
+.sobre div .sobre-text h2 {
+    font-size: 40px;
+}
+
+.sobre div .sobre-text h2 span {
+    color: #d16058;
+}
+
+main div .sobre-text h2 {
+    font-family: "Inter", sans-serif;
+    text-align: center;
+    color: white;
+    margin-bottom: 50px;
+}
+
+main div .sobre-text p {
+    font-family: "Inter", sans-serif;
+    color: whitesmoke;
+    text-align: justify;
+}
+
+main div .image {
+    margin-left: 100px;
+}
+
+/* ESPECIALIDADES */
+
+.especialidades {
+    margin-top: 130px;
+}
+
+.especialidades h2 {
+    font-family: "Inter", sans-serif;
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.especialidades h2 span {
+    color: #d16058;
+}
+
+.flex2 {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 40px;
+}
+
+.box {
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 120px;
+}
+
+.flex2 .box1 {
+    width: 500px;
+    background-color: #1a1a1a;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    gap: 40px;
+    text-align: justify;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    font-family: "Inter", sans-serif;
+    display: inline-block;
+    transition: .2s;
+}
+
+.flex2 .box1:hover{
+    transform: scale(1.05);
+}
+
+.flex2 .box1 p {
+    margin-top: 10px;
+}
+
+/* PROJETOS */
+
+.projetos {
+    margin-top: 130px;
+    background-color: #1a1a1a;
+    padding: 20px;
+}
+
+.projetos h2 {
+    margin-top: 60px;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: white;
+}
+
+
+.projetos .projeto1 img{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 120px;
+    margin-bottom: 50px;
+    display: inline-block;
+    transition: .3s;
+}
+
+.projetos .projeto1 img:hover{
+    animation: radius 1.5s ease-in-out;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+/* */
+
+.final-pagina {
+    padding: 80px;
+    margin-top: 70px;
+}
+
+.final-pagina-text {
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+}
+
+.final-pagina-botao {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+@keyframes animacao {
+    0% {
+        opacity: 0;
+        bottom: -40px;
+    }
+
+    100% {
+        opacity: 1;
+        bottom: 0px;
+    }
+}
+
+@keyframes radius {
+    0%{
+        border-radius: 0;
+    }
+
+    100% {
+        border-radius: 15px;
+    }
+}
+
